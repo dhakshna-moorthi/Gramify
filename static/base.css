@@ -1,0 +1,52 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for contrast */
+    color: white; /* Light text color for readability */
+}
+
+/* Header and Navbar */
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3 {
+    font-size: 28px;
+    color: #f5c542; /* Gold */
+    font-weight: bold;
+    margin: 0;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #f5c542;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdf80; /* Lighter gold on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f5c542; /* Gold */
+    font-size: 14px;
+}

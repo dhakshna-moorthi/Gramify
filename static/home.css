@@ -1,0 +1,132 @@
+/* Hero Section */
+.hero { /* Dark background for hero section */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #f5c542; /* Gold */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons .btn {
+    background-color: #f5c542;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #ffdf80;
+}
+
+/* Features Section - Matching the Hero Section */
+.features {
+    color: white;
+    margin-bottom: 75px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f5c542; /* Gold */
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #ddd; /* Slightly lighter text for contrast */
+}
+
+/* About Us and Contact Us Sections */
+.contact-section {
+    color: #f5c542; /* Gold text color */
+    padding-bottom: 75px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-section {
+    color: #f5c542; /* Gold text color */
+    padding-top: 75px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-section h2, .contact-section h2 {
+    font-size: 28px;
+    color: #f5c542; /* Gold color for section headings */
+    margin-bottom: 20px;
+}
+
+.about-section p, .contact-section p {
+    font-size: 18px;
+    color: #ddd; /* Light text for readability */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #b3a675; /* Slightly softer gold for contact details */
+    margin: 8px 0;
+}
+
+.contact-info strong {
+    color: #ffdf80; /* Lighter gold for emphasis on labels */
+}
+
+/* Button styling consistent with the theme */
+.button {
+    background-color: #f5c542;
+    color: #333; /* Dark text on gold button */
+    padding: 12px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px 5px;
+}
+
+.button:hover {
+    background-color: #ffdf80; /* Lighter gold on hover */
+}
+
+.golden-line {
+    border: none;
+    border-top: 2px solid #f5c542; /* Adjust thickness by changing '2px' */
+    width: 100%; /* Adjust width as needed */
+    margin: 20px 0; /* Optional spacing */
+}

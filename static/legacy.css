@@ -1,0 +1,84 @@
+.heading {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center;
+    color: #f5c542; /* Gold */
+}
+
+/* Form Styles */
+form {
+    background-color: #333; /* Dark background */
+    padding: 30px;
+    margin: 30px auto 50px auto;
+    width: 600px; /* Adjusted width for 2-column layout */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Grid Container for the 2x2 layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 20px; /* Space between grid items */
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    font-size: 18px;
+    color: #8b690b;; /* Gold */
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"], select {
+    padding: 10px;
+    border: 1px solid #8b690b;; /* Gold border */
+    border-radius: 5px;
+    background-color: #1a1a1a; /* Dark background */
+    color: #8b690b; /* Gold text */
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5c542; /* Gold */
+    color: #1a1a1a; /* Dark text */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Space above button */
+}
+
+/* Button hover */
+button:hover {
+    background-color: #ffdf80; /* Lighter gold */
+}
+
+/* Centered paragraph */
+p {
+    color: #f5c542; /* Gold */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Links */
+a {
+    color: #ffdf80; /* Lighter gold */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

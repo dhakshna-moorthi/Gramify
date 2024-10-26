@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', path='predict.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<h4 class="heading">Place your predictions</h4>
+
+<div class="predict-container">
+    <form id="predictionForm" action="/predict" method="post">
+        <div id="albumOfTheYear" class="category">
+            <h2>Album of the Year</h2>
+            <select name="album_of_the_year" required>
+                <option value="">Select an album</option>
+                {% for album in albums %}
+                    <option value="{{ album }}">{{ album }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div id="recordOfTheYear" class="category">
+            <h2>Record of the Year</h2>
+            <select name="record_of_the_year" required>
+                <option value="">Select a record</option>
+                {% for record in records %}
+                    <option value="{{ record }}">{{ record }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div id="songOfTheYear" class="category">
+            <h2>Song of the Year</h2>
+            <select name="song_of_the_year" required>
+                <option value="">Select a song</option>
+                {% for song in songs %}
+                    <option value="{{ song }}">{{ song }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div id="bestNewArtist" class="category">
+            <h2>Best New Artist</h2>
+            <select name="best_new_artist" required>
+                <option value="">Select an artist</option>
+                {% for artist in artists %}
+                    <option value="{{ artist }}">{{ artist }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="button-container">
+            <button type="submit">Submit Predictions</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', path='legacy.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<h4 class="heading"> Find out previous Grammy winners</h4>
+
+<form method="post">
+    <div class="grid-container">
+        <div class="form-group">
+            <label for="artist_name">Artist Name:</label>
+            <input type="text" id="artist_name" name="artist_name">
+        </div>
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year" min="1900" max="2024">
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="">Select a category</option>
+                <option value="Album of the Year">Album of the Year</option>
+                <option value="Record of the Year">Record of the Year</option>
+                <option value="Song of the Year">Song of the Year</option>
+                <option value="Best New Artist">Best New Artist</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="song_album_name">Song/Album Name:</label>
+            <input type="text" id="csong_album_name" name="song_album_name">
+        </div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+{% endblock %}
+

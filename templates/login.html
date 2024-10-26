@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', path='log.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <h4 class="heading"> Login </h4>
+  
+    <form method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+        <p>New to Predictify? <a href="/register">Register</a></p>
+    </form>
+
+{% endblock %}
+
+

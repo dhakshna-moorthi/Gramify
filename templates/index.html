@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', path='home.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Predictify</h1>
+        <p>Stay ahead of the curve with predictions for the Grammys and other top entertainment events!</p>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <h2>Make Predictions</h2>
+            <p>Use your knowledge to predict Grammy winners and compete with other users!</p>
+        </div>
+        <div class="feature-box">
+            <h2>Latest News</h2>
+            <p>Get the latest updates on nominees, categories, and industry trends.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Legacy</h2>
+            <p>View and explore past winners, and learn about the history of the Grammys.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Forum</h2>
+            <p>Join discussions and share your thoughts on predictions, news, and more.</p>
+        </div>
+    </section>
+
+    <hr class="golden-line">
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>Predictify is your platform for exploring Grammy predictions and engaging with other music enthusiasts. We keep you up-to-date with the music industry and allow you to join in on discussions, share your insights, and enjoy the thrill of making accurate predictions!</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have any questions or feedback? Reach out to us using the contact information below!</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@predictify.com</p>
+            <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+            <p><strong>Address:</strong> 123 Music Lane, Melody City, CA 90210</p>
+        </div>
+    </section>
+        
+{% endblock %}

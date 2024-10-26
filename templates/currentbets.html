@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', path='currentbets.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h4 class="heading">Current Predictions</h4>
+
+    <div class="charts-container">
+        <div class="chart">
+            <h2>Album of the Year</h2>
+            <canvas id="albumChart"></canvas>
+        </div>
+        <div class="chart">
+            <h2>Record of the Year</h2>
+            <canvas id="recordChart"></canvas>
+        </div>
+        <div class="chart">
+            <h2>Song of the Year</h2>
+            <canvas id="songChart"></canvas>
+        </div>
+        <div class="chart">
+            <h2>Best New Artist</h2>
+            <canvas id="artistChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        function createChart(elementId, labels, data) {
+            const ctx = document.getElementById(elementId).getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: '#8b690b',
+                        borderColor: '#8b690b',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false // Hide the legend
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                autoSkip: false,
+                                maxRotation: 90,
+                                minRotation: 90
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+
+        // Create charts with the data passed from the backend
+        try {
+            const albumData = JSON.parse('{{ album_data | safe }}');
+            const recordData = JSON.parse('{{ record_data | safe }}');
+            const songData = JSON.parse('{{ song_data | safe }}');
+            const artistData = JSON.parse('{{ artist_data | safe }}');
+
+            createChart('albumChart', albumData.labels, albumData.data);
+            createChart('recordChart', recordData.labels, recordData.data);
+            createChart('songChart', songData.labels, songData.data);
+            createChart('artistChart', artistData.labels, artistData.data);
+        } catch (error) {
+            console.error('Error parsing or creating charts:', error);
+        }
+    </script>
+{% endblock %}

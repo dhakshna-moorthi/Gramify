@@ -1,0 +1,61 @@
+/* Main Content Styles */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #f5c542; /* Gold */
+}
+
+.table-container {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #222; /* Slightly lighter than the body */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styles */
+table.dataframe {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: white; /* Gold text for table */
+}
+
+table.dataframe th,
+table.dataframe td {
+    border: 1px solid #444; /* Dark border */
+    padding: 10px;
+    text-align: left;
+}
+
+table.dataframe th {
+    background-color: #333; /* Dark background for header */
+}
+
+table.dataframe tr:nth-child(even) {
+    background-color: #444; /* Darker background for even rows */
+}
+
+table.dataframe tr:hover {
+    background-color: #555; /* Highlight row on hover */
+}
+
+.no-results-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.no-results-message p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #666;
+}

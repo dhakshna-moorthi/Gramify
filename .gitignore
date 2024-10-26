@@ -1,0 +1,4 @@
+gramify.db
+venv
+__pycache__
+routers/__pycache__/

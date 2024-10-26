@@ -1,0 +1,38 @@
+.heading {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center;
+    color: #f5c542; /* Gold */
+}
+
+.charts-container {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chart h2 {
+    font-size: 18px;
+    color: #f5c542; /* Gold */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+canvas {
+    max-height: 150px; /* Limits the canvas height */
+    width: 100%; /* Makes canvas responsive */
+    display: block;
+}

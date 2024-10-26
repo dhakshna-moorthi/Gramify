@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', path='results.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h1>Results</h1>
+    
+    {% if df.strip() %}
+        <div class="table-container">
+            {{ df | safe }}
+        </div>
+    {% else %}
+        <div class="no-results-message">
+            <p>No winners from the past 10 years match the given filters.</p>
+            <p>Please try adjusting your search criteria.</p>
+        </div>
+    {% endif %}
+{% endblock %}

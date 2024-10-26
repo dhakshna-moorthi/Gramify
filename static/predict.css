@@ -1,0 +1,74 @@
+.heading {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center;
+    color: #f5c542; /* Gold */
+}
+
+/* Container styling */
+.predict-container {
+    max-width: 600px;
+    margin: 30px auto 100px auto;
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark background */
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.predict-container h2 {
+    color: #f5c542; /* Golden color */
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* Category styles */
+.category {
+    margin-bottom: 40px;
+}
+
+/* Select dropdown styles */
+.predict-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #8b690b; /* Golden border */
+    border-radius: 4px;
+    background-color: #333;
+    color: #8b690b;
+    appearance: none;
+}
+
+.predict-container select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #f5c542; /* Highlight on focus */
+}
+
+/* Submit button styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Optional: Adds space above the button */
+}
+
+/* Button styling */
+button[type="submit"] {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1c1c1c; /* Dark text color */
+    background-color: #f5c542; /* Golden background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover and active styles */
+button[type="submit"]:hover {
+    background-color: #e6c200; /* Slightly darker gold */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+

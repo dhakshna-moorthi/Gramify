@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gramify </title>
+
+    {% block styles %}
+        {% if stylesheet %}
+            <link rel="stylesheet" href="{{ stylesheet }}">
+        {% endif %}
+    {% endblock %}
+
+    <link rel="stylesheet" href="{{ url_for('static', path='base.css') }}">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/home"><h3>Gramify</h3></a>
+            <div class="nav-links">
+                <a href="/legacy">Legacy</a>
+                <a href="/predict">Predict</a>
+                <a href="/forum">Forum</a>
+                {% if user and user.is_authenticated %}
+                    <a href="/logout">Logout</a>
+                {% else %}
+                    <a href="/login">Login</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Predictify. All rights reserved.</p>
+    </footer>
+</body>
+</html>
