@@ -33,10 +33,10 @@ def auth_required(request: Request):
         raise HTTPException(status_code=401, detail="Not authenticated")
     return user
 
-albums = ["Brat", "Chronicles of a Diamond", "Cowboy Carter", "Eternal Sunshine", "Hit Me Hard and Soft", "Short n Sweet", "The Rise and Fall of a Midwest Princess", "The Tortured Poets Department"]
-records = ["A Bar Song", "Birds of a Feather", "Die With a Smile", "Espresso", "Good Luck, Babe!", "Not Like Us", "Now and Then", "Texas Hold Em"]
-songs = ["Beautiful Things", "Birds of a Feather", "Die With a Smile", "Fortnight", "Good Luck, Babe!", "Not Like Us", "Please Please Please", "Texas Hold Em"]
-artists = ["Benson Boone", "Chappell Roan", "Megan Moroney", "Raye", "Sabrina Carpenter", "Shaboozey", "Sierra Ferrell", "Teddy Swims"]
+albums = ["New Blue Sun", "Cowboy Carter", "Short n Sweet", "Brat", "Djesse Vol. 4", "Hit Me Hard and Soft", "The Rise and Fall of a Midwest Princess", "The Tortured Poets Department"]
+records = ["Now and Then", "Texas Hold Em", "Espresso", "360", "Birds of a Feather", "Not Like Us", "Good Luck, Babe!", "Fortnight" ]
+songs = ["A Bar Song", "Birds of a Feather", "Die With a Smile", "Fortnight", "Good Luck, Babe!", "Not Like Us", "Please Please Please", "Texas Hold Em"]
+artists = ["Benson Boone", "Sabrina Carpenter", "Doechii", "Khruangbin", "Raye", "Chappell Roan", "Megan Moroney", "Shaboozey", "Teddy Swims"]
 
 ### get ###
 
